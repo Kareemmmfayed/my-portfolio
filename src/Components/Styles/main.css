@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+:root {
+  --background-color: #222327;
+  --main-red: #f3946f;
+  --main-yellow: #dcc73c;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0 200px;
+  }
+}
+.App {
+  position: relative;
+}
+
+.cover {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../Assets/631a5d4631d4c55a475f3e34_noise-50.png");
+}
+
+.header {
+  color: white;
+  display: flex;
+  align-items: center;
+  background-color: var(--background-color);
+  height: 75px;
+  position: sticky;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.header .header__logo {
+  flex: 1;
+  padding: 7px 15px;
+  font-size: 25px;
+}
+.header .header__links {
+  display: flex;
+  list-style: none;
+}
+.header .header__links li {
+  padding: 0 20px;
+  cursor: pointer;
+  color: gray;
+}
+.header .header__links li:hover {
+  color: white;
+}/*# sourceMappingURL=main.css.map */

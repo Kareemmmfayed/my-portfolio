@@ -1,0 +1,30 @@
+.header {
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+    height: 75px;
+    position: sticky;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    .header__logo {
+        flex: 1;
+        padding: 7px 15px;
+        font-size: 25px;
+    }
+
+    .header__links {
+        display: flex;
+        list-style: none;
+    }
+
+    .header__links li {
+        padding: 0 20px;
+        cursor: pointer;
+        color: gray;
+    }
+
+    .header__links li:hover {
+        color: white;
+    }
+}
