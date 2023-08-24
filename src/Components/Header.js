@@ -7,7 +7,7 @@ function Header() {
             <ul className='header__links'>
                 <li>Home</li>
                 <li>About</li>
-                <li>Project</li>
+                <li>Projects</li>
                 <li>Contact</li>
             </ul>
         </header>

@@ -14,43 +14,6 @@ body {
 }
 
 .App {
-    position: relative;
-}
-
-.cover {
     z-index: 100;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background-image: url('../../Assets/631a5d4631d4c55a475f3e34_noise-50.png');
-}
-
-@media (min-width: 768px) {
-    .container {
-        padding: 40px 100px;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        padding: 40px 200px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .header {
-        padding: 0 200px;
-    }
-
-    .container {
-        padding: 60px 300px;
-    }
-}
-
-@media (min-width: 1400px) {
-    .container {
-        padding: 80px 400px;
-    }
 }
