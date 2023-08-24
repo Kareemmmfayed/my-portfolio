@@ -9,15 +9,10 @@ body {
 
 :root {
   --background-color: #222327;
-  --main-red: #f3946f;
+  --main-red: #b3404a;
   --main-yellow: #dcc73c;
 }
 
-@media screen and (min-width: 1200px) {
-  .container {
-    padding: 0 200px;
-  }
-}
 .App {
   position: relative;
 }
@@ -32,6 +27,29 @@ body {
   background-image: url("../../Assets/631a5d4631d4c55a475f3e34_noise-50.png");
 }
 
+@media (min-width: 768px) {
+  .container {
+    padding: 40px 100px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    padding: 40px 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    padding: 0 200px;
+  }
+  .container {
+    padding: 60px 300px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    padding: 80px 400px;
+  }
+}
 .header {
   color: white;
   display: flex;
@@ -57,4 +75,86 @@ body {
 }
 .header .header__links li:hover {
   color: white;
+}
+
+.home .home__me {
+  display: flex;
+}
+.home .home__me .home__me__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  margin-right: 8px;
+}
+.home .home__me .home__me__info h1 {
+  font-weight: 500;
+  font-size: 44px;
+}
+.home .home__me .home__me__info h1 .home__me__infoIcon {
+  color: var(--main-yellow);
+}
+.home .home__me .home__me__info p {
+  font-size: 18px;
+  color: grey;
+}
+.home .home__me .home__me__info .home__me__infoCont {
+  display: flex;
+}
+.home .home__me .home__me__info .home__me__infoCont .home__me__infoLink {
+  height: 34px;
+  margin-right: 10px;
+  color: black;
+}
+.home .home__me .home__me__info .home__me__infoCont .blue:hover {
+  color: #0a66c2;
+}
+.home .home__me .home__me__info .home__me__infoCont .grey:hover {
+  color: #1c2128;
+}
+.home .home__me .home__me__image {
+  border-radius: 50%;
+  overflow: hidden;
+  min-width: 300px;
+  height: 300px;
+  background-color: var(--main-red);
+  position: relative;
+}
+.home .home__me .home__me__image img {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+.home .home__stack {
+  padding: 0;
+  margin: 60px 0px;
+  list-style: none;
+  display: flex;
+}
+.home .home__stack li {
+  margin-right: 10px;
+}
+.home .home__stack li img {
+  width: 50px;
+}
+
+@media (max-width: 768px) {
+  .home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .home .home__me {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .home .home__me .home__me__image {
+    width: 300px;
+    margin-top: 45px;
+  }
 }/*# sourceMappingURL=main.css.map */
