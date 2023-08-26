@@ -46,7 +46,7 @@ body {
 }
 
 .home {
-  height: 720px;
+  height: 700px;
 }
 .home .home__me {
   display: flex;
@@ -90,6 +90,7 @@ body {
   height: 300px;
   background-color: var(--main-red);
   position: relative;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
 }
 .home .home__me .home__me__image img {
   position: absolute;
@@ -99,6 +100,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -40%);
+  box-shadow: 0 0 0 3px #e78267;
 }
 .home .home__stack {
   padding: 0;
@@ -169,6 +171,7 @@ body {
   border-radius: 3px;
   height: 390px;
   width: 100%;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
 }
 .about .about__me img {
   border-radius: 4px;
@@ -212,7 +215,7 @@ body {
   transition: all 0.3s;
 }
 .about .about__me > div button:hover {
-  background-color: red;
+  background-color: green;
   margin-top: 15px;
 }
 
@@ -252,5 +255,57 @@ body {
 }
 .projects {
   width: 100%;
-  height: 720px;
+  height: 770px;
+  padding-top: 50px;
+  background-color: var(--background-color);
+}
+.projects > h2 {
+  text-align: center;
+  color: var(--main-yellow);
+  margin-bottom: 100px;
+}
+.projects .projects__project {
+  display: flex;
+  justify-content: space-around;
+}
+.projects .projects__project .project {
+  background-color: var(--main-red);
+  width: 400px;
+  height: 500px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-image: url("../../Assets/631a5d4631d4c55a475f3e34_noise-50.png");
+}
+.projects .projects__project .project > img {
+  width: 100%;
+  height: 200px;
+}
+.projects .projects__project .project > h4 {
+  font-size: 26px;
+  margin: 8px 16px;
+  color: white;
+}
+.projects .projects__project .project > p {
+  padding: 14px;
+}
+.projects .projects__project .project > div {
+  display: flex;
+  padding: 10px;
+  margin-top: 42px;
+}
+.projects .projects__project .project > div a {
+  text-decoration: none;
+  background: var(--main-yellow);
+  padding: 5px;
+  border-radius: 4px;
+  color: var(--background-color);
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.projects .projects__project .project > div a:first-of-type {
+  margin-right: auto;
+}
+.projects .projects__project .project > div a:hover {
+  background-color: var(--background-color);
+  color: white;
 }/*# sourceMappingURL=main.css.map */
