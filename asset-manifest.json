@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.33b2bcc4.css",
+    "main.js": "/my-portfolio/static/js/main.88a9f464.js",
+    "static/media/pexels-markus-spiske-113850.png": "/my-portfolio/static/media/pexels-markus-spiske-113850.a0b9dc8a2c8b2c4225f5.png",
+    "static/media/me.jpg": "/my-portfolio/static/media/me.fb92be409755df13f4fd.jpg",
+    "static/media/_noise-50.png": "/my-portfolio/static/media/631a5d4631d4c55a475f3e34_noise-50.56af95d40084f094eb73.png",
+    "static/media/JavaScript.png": "/my-portfolio/static/media/JavaScript.ac9e504211b46cfb0118.png",
+    "static/media/scss.png": "/my-portfolio/static/media/scss.6747d5c68a381e29fc69.png",
+    "static/media/css.png": "/my-portfolio/static/media/css.463e319bad8e0edf1ef7.png",
+    "static/media/bootstrap-logo-vector.svg": "/my-portfolio/static/media/bootstrap-logo-vector.d180fe4cd44732fd70b35f650a76b99c.svg",
+    "index.html": "/my-portfolio/index.html",
+    "main.33b2bcc4.css.map": "/my-portfolio/static/css/main.33b2bcc4.css.map",
+    "main.88a9f464.js.map": "/my-portfolio/static/js/main.88a9f464.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33b2bcc4.css",
+    "static/js/main.88a9f464.js"
+  ]
+}
