@@ -22,9 +22,19 @@
         padding: 0 20px;
         cursor: pointer;
         color: gray;
+
+        a {
+            text-decoration: none;
+            color: gray;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            color: white;
+        }
     }
 
-    .header__links li:hover {
+    .header__links li:first-of-type {
         color: white;
     }
 }

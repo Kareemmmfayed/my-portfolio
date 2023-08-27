@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -14,8 +15,20 @@ body {
 }
 
 .App {
-  z-index: 100;
+  min-width: 536px;
   background-image: url("../../Assets/631a5d4631d4c55a475f3e34_noise-50.png");
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-red);
 }
 
 .header {
@@ -41,7 +54,15 @@ body {
   cursor: pointer;
   color: gray;
 }
-.header .header__links li:hover {
+.header .header__links li a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.3s;
+}
+.header .header__links li a:hover {
+  color: white;
+}
+.header .header__links li:first-of-type {
   color: white;
 }
 
@@ -167,7 +188,6 @@ body {
 .about .about__me {
   display: flex;
   background-color: var(--background-color);
-  background-image: url("../../Assets/631a5d4631d4c55a475f3e34_noise-50.png");
   border-radius: 3px;
   height: 390px;
   width: 100%;
@@ -255,8 +275,8 @@ body {
 }
 .projects {
   width: 100%;
-  height: 770px;
-  padding-top: 50px;
+  height: 100%;
+  padding: 50px 0;
   background-color: var(--background-color);
 }
 .projects > h2 {
@@ -265,16 +285,17 @@ body {
   margin-bottom: 100px;
 }
 .projects .projects__project {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 60px;
+  padding: 10px 80px;
 }
 .projects .projects__project .project {
   background-color: var(--main-red);
-  width: 400px;
   height: 500px;
   border-radius: 4px;
   overflow: hidden;
-  background-image: url("../../Assets/631a5d4631d4c55a475f3e34_noise-50.png");
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
 }
 .projects .projects__project .project > img {
   width: 100%;
@@ -287,6 +308,7 @@ body {
 }
 .projects .projects__project .project > p {
   padding: 14px;
+  line-height: 1.8;
 }
 .projects .projects__project .project > div {
   display: flex;
@@ -308,4 +330,60 @@ body {
 .projects .projects__project .project > div a:hover {
   background-color: var(--background-color);
   color: white;
+}
+
+.contact {
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact p {
+  text-align: center;
+  color: grey;
+}
+.contact .contact__contentInfo {
+  background-color: var(--main-red);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 45px;
+  padding: 10px;
+  width: 500px;
+}
+.contact .contact__contentInfo h2 {
+  font-size: 34px;
+  text-align: center;
+  margin-top: 0;
+  color: var(--main-yellow);
+}
+.contact .contact__contentInfo div {
+  display: flex;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 6px;
+}
+.contact .contact__contentInfo div span:first-of-type {
+  margin-left: 8px;
+  flex: 65%;
+}
+.contact .contact__contentInfo div span:last-of-type {
+  flex: 30%;
+  cursor: pointer;
+}
+.contact .contact__contentInfo div span:last-of-type a {
+  text-decoration: none;
+  color: white;
+}
+.contact .contact__contentInfo div span:last-of-type a:hover {
+  color: var(--background-color);
+}
+.contact .contact__contentInfo div span:last-of-type:hover {
+  color: var(--background-color);
+}
+
+.footer {
+  background-color: var(--background-color);
+  color: grey;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

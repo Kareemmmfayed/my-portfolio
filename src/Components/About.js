@@ -5,7 +5,7 @@ import { faAnkh, faDownload } from '@fortawesome/free-solid-svg-icons'
 
 function About() {
     return (
-        <div className='about about__container'>
+        <div id='about' className='about about__container'>
             <div className='about__me'>
                 <img src={code} alt='code' />
                 <div>

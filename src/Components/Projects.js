@@ -6,26 +6,26 @@ import protfolio from '../Assets/pexels-markus-spiske-113850.png'
 
 function Projects() {
     return (
-        <div className='projects'>
+        <div id='project' className='projects'>
             <h2>Here are my favorite projects <FontAwesomeIcon icon={faFire} /> </h2>
             <div className='projects__project'>
                 <Project
                 name='test'
-                description= 'The electricity problem is not likely to be resolved soon, as Eskom faces many challenges and constraints in improving its performance and capacity. Some of the possible solutions include' 
+                description= 'Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.' 
                 image={protfolio}
                 code="https://www.youtube.com/"
                 demo='https://www.youtube.com/'
                 />
                 <Project
                 name='test'
-                description= 'The electricity problem is not likely to be resolved soon, as Eskom faces many challenges and constraints in improving its performance and capacity. Some of the possible solutions include' 
+                description= 'Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.' 
                 image={protfolio}
                 code="https://www.youtube.com/"
                 demo='https://www.youtube.com/'
                 />
                 <Project
                 name='test'
-                description= 'The electricity problem is not likely to be resolved soon, as Eskom faces many challenges and constraints in improving its performance and capacity. Some of the possible solutions include' 
+                description= 'Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.' 
                 image={protfolio}
                 code="https://www.youtube.com/"
                 demo='https://www.youtube.com/'
